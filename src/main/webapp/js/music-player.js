@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Set audio source - you need to add your own music file
   // For now, using a placeholder. Replace with your actual music file
-  audio.src = 'background-music.mp3'; // Add your music file in audio folder
+  audio.src = 'audio/background-music.mp3'; // Add your music file in audio folder
   audio.loop = true;
   audio.volume = 0.8; // Start at 50% volume
   
