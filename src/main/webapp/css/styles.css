@@ -478,6 +478,75 @@ html,body{
   .site-title h1 { font-size: clamp(20px, 10vw, 34px); }
   .site-title .sub { font-size: 12px; }
 }
-/* Place this in your styles.css or in a <style> block */
 
+/* Music player styles */
+.music-player {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid var(--neon);
+  padding: 8px 12px;
+  border-radius: 6px;
+  backdrop-filter: blur(4px);
+}
+
+.music-btn {
+  background: transparent;
+  border: 1px solid var(--neon);
+  color: var(--neon);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.music-btn:hover {
+  background: rgba(0, 255, 51, 0.1);
+  box-shadow: 0 0 8px rgba(0, 255, 51, 0.3);
+}
+
+.volume-slider {
+  width: 80px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 4px;
+  background: rgba(0, 255, 51, 0.3);
+  border-radius: 2px;
+  outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--neon);
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+.volume-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--neon);
+  cursor: pointer;
+  border: 2px solid #000;
+}
+
+.music-btn.active {
+  background: var(--neon);
+  color: #000;
+}
    
